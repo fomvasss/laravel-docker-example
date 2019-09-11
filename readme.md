@@ -2,22 +2,27 @@
 
 ### Install
 
-Install: git, docker, docker-compoose
+Install local: git, docker, docker-compoose
 
-1) `git clone <this repo>`
+1) Run `git clone <this repo>` and `cd` dir 
 
 2) See & configure (if need) `docker-compose.yml` in root path
 
-3) `docker-compose up --build`
+3) Run `docker-compose up --build`
 
-4) Run container `docker-compose exec app  bash`
+4) Enter to container `docker-compose exec app  bash`
 
-4.1) `composer install`
+5) Run in container `composer install`
 
-4.2) Edit `.env`
+6) Edit `.env` for Laravel
 
-4.3) `php artisan migrate --seed`
+7) Run migrate & seeder`php artisan migrate --seed`
 
-5) See URL: 
- - Site: `http://localhost:8080` (For login: admin@app.com, password)
- - Adminer: `http://localhost:6080` (For login: root, password)
+Go to URL: 
+ - Site: `http://localhost:8080` (for login: admin@app.com, password)
+ - Adminer: `http://localhost:6080` (for login: root, password)
+ - PhpMyAdmin: `http://localhost:6081` (for login: root, password)
+
+ ### Links
+ - https://docs.docker.com/install/linux/docker-ce/ubuntu
+ - https://docs.docker.com/compose/install
