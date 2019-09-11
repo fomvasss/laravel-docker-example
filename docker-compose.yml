@@ -38,6 +38,8 @@ services:
     restart: always
     ports:
       - 6080:8080
+    depends_on:
+      - db
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -46,6 +48,8 @@ services:
     restart: always
     ports:
      - 6081:80
+    depends_on:
+      - db
 
   redis:
     image: redis:alpine
